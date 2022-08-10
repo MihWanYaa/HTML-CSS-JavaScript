@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input:required:not(:placeholder-shown) {
+    border-color: red;
+}
+
+input:valid:required{
+    border-color: rgb(0, 255, 0);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+/* --------------------------------------------------Signup CSS Area -------------------------------------------------- */
+
+.signup_form input{
+    margin-left: 50px;
+}
+
+.signup_rule{
+    color: rgb(134, 134, 134);
+    font-size: 13px;
+}
+        /* -----Password Area----- */
+.signup_pass_create_note{
+    color: rgb(82, 82, 82);
+    margin: 0.5px 0px 0px 50px;
+    font-size: small;
+}
+
+.signup_pass_check_equal{
+    font-size: small;
+    margin: 0.5px 0px 0px 50px;
+}
+
+/* --------------------------------------------------Signin CSS Area-------------------------------------------------- */
+.signin_form input{
+    margin-left: 50px;
+}
+
+
+
+
